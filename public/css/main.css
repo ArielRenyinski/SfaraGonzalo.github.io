@@ -1,0 +1,267 @@
+/* 
+***************
+***************
+    GENERAL
+***************
+***************
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif !important; 
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 
+**************
+**************
+    MOBILE
+**************
+**************
+*/
+
+/* 
+**************
+    HEADER
+**************
+*/
+
+.myNav {
+    min-height: 10vh;
+    background-color: #e0e0e0 !important;
+}
+
+
+/* 
+***************
+    SECTIONS
+***************
+*/
+
+.main__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.section__title {
+    text-align: center;
+    width: 90%;
+    margin-top: 11%;
+    margin-bottom: 7%;
+    font-family: 'Raleway', sans-serif !important; 
+}
+
+.section__paragraph {
+    width: 90%;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif !important; 
+}
+
+
+
+
+/* 
+**************
+    BANNER
+**************
+*/
+
+#section--banner {
+    height: 90vh;
+}
+
+
+#mobile__banner {
+    display: inline;
+}
+
+#desktop__banner {
+    display: none;
+}
+
+
+/* 
+**************
+    About
+**************
+*/
+
+#section--about {
+    background-color: #f9f9f9;
+}
+
+
+/* 
+***************
+    Services
+***************
+*/
+
+
+#section--services {
+    background-color: #f0f0f0;
+}
+
+#section--services .card {
+    background-color: transparent !important;
+    border: none !important;
+    align-items: center;
+}
+
+#section--services .card-title {
+    text-align: center;
+}
+
+#section--services .card-text {
+    text-align: justify;
+}
+
+
+
+#section--services .card-img-top {
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+}
+
+
+/* 
+***************
+    Gallery
+***************
+*/
+
+#section--gallery {
+    background-color: #ededed;
+}
+
+#gallery__title {
+    color: #5c5c5c;
+}
+
+
+.gallery__photo {
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 10%;
+}
+
+
+/* 
+***************
+    Contact
+***************
+*/
+
+#section--contact {
+    background-color: #e3e3e3;
+    padding-bottom: 15%;
+}
+
+
+.contact__form {
+    width: 90%;
+}
+
+
+
+
+/* 
+**************
+    FOOTER
+**************
+*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8vh;
+    background-color: #242424;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    color: white;
+}
+
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 19px;
+    }
+    /* 
+    **************
+        BANNER
+    **************
+    */
+
+    .banner__img {
+        width: 100%;
+        height: 90vh;
+    }
+
+    #mobile__banner {
+        display: none;
+    }
+
+    #desktop__banner {
+        display: inline;
+    }
+
+
+    /* 
+    ***************
+        SECTIONS
+    ***************
+    */
+
+    .main__section {
+        padding-bottom: 4%;
+    }
+
+    .section__title {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+
+    /* 
+    ***************
+        Gallery
+    ***************
+    */
+
+
+    .gallery__photo {
+        display: inline-block;
+        width: 25%;
+        margin: 5% 3%;
+    }
+
+
+    /* 
+    ***************
+        Contact
+    ***************
+    */
+
+    #section--contact {
+        padding-bottom: 4%;
+    }
+}
